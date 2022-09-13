@@ -23,3 +23,22 @@ garage.Add(gavinsCar);
 
 // showing we can access those cars and our properties from the list
 Console.WriteLine(garage[1].Model);
+
+// see the effects of the Accelerate method
+Console.WriteLine(gavinsCar.Speed);
+gavinsCar.Accelerate();
+Console.WriteLine(gavinsCar.Speed);
+gavinsCar.Accelerate();
+Console.WriteLine(gavinsCar.Speed);
+gavinsCar.Accelerate(7);
+Console.WriteLine(gavinsCar.Speed);
+
+// referencing a static method
+// class.name
+// Note this only works by calling the class, not an object
+
+Car.Honk();
+var timeToDrive = gavinsCar.TimeToTravelDistance(500);
+Console.WriteLine(timeToDrive);
+
+// gavinsCar.TimeToTravelDistance(500) alone is a complete statement, you must do something with it like print to the Console
